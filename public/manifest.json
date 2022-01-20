@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Exodus Share",
+  "name": "Exodus",
+  "description": "Exodus is an application which helps you share files publicly",
   "icons": [
     {
       "src": "favicon.ico",
