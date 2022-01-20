@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url('./assets/fonts/Gilroy-Medium/Gilroy-Medium.ttf');
+}
+
+@font-face {
+    font-family: Euclid;
+    src: url('./assets/fonts/Gilroy-Medium/Gilroy-Medium.woff');
+}
