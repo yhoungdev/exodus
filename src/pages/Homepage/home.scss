@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+@import url('../../App.css');
+
+.divide h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+.divide p {
+    width: 60%;
+    text-align: center;
+    font-family: Euclid;
+}
+
+
+.divide {
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+//for large screens
+
+@media screen and (min-width:1200px) {
+    .left h1 {
+        width: 539px;
+        height: 154px;
+        left: 408px;
+        top: 237px;
+        
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 64px;
+        line-height: 77px;
+        
+    }
+
+    .divide p {
+        width: 30%;
+        margin-top: 1em;
+    }
+}

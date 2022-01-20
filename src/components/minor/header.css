@@ -1,0 +1,31 @@
+@import url(../../App.css);
+
+header {
+    padding: 2em 5em;
+    font-family: Euclid;
+}
+
+header ul {
+    display:inline-flex;
+    list-style:none;
+}
+
+header ul li {
+    margin-right:40px;
+}
+
+
+/* small screen*/
+
+@media screen and (max-width: 768px) {
+    header {
+        padding:1em  2em;
+    }
+    header ul {
+        display:block;
+    }
+    header ul li {
+        margin-right:0;
+    }
+}
+    

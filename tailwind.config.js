@@ -1,10 +1,12 @@
 module.exports = {
-  content: [],
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
-    container: {
-      'center': true,
-    },
+  
     colors: {
+
+      "btn-green":"#21CD99"
 
     },
     screens: {
