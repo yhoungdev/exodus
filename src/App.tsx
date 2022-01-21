@@ -2,22 +2,33 @@ import React from 'react';
 
 import './App.css';
 // eslint-disable-next-line no-unused-vars
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import Homepage from './pages/Homepage/home';
 import {ErrorScreen} from './pages/404/404';
-import Main from './pages/auth/main/main';
+import {Main} from './pages/auth/main/main';
+import Pdf from './pages/auth/routes/pdf/pdf';
+import Docx from './pages/auth/routes/docx/docx';
+import Txt from './pages/auth/routes/txt/txt';
 
 // eslint-disable-next-line
 function App() {
   return (
     <div className="App">
+       
       {/* //eslint-disable-next-line require */}
       <Router >
       <Routes>
-       
+        
+        
         <Route path="/" element={<Homepage/>}/>
-        <Route path="/main" element={<Main/>}/>
-        <Route  element={<ErrorScreen/>} />
+        <Route path="/main" element={<Main/>}>
+
+          <Route path="pdf" element={<Pdf/>}/>
+          <Route path="docx" element={<Docx/>}/>
+          <Route path="txt" element={<Txt/>}/>
+        </Route>
+ 
+        <Route path="*" element={<ErrorScreen/>} />
      </Routes>
       </Router>
     
