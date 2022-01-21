@@ -1,12 +1,11 @@
 import React from 'react';
-    const Pdf = () =>{
+const Docx = () => {
     return (
-
         <>
-            PDF
+            Docx 
         </>
     )
 }
 
-export default Pdf;
- 
+export default Docx;
+

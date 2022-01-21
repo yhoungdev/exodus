@@ -1,19 +1,43 @@
 import React from 'react';
 import Header from '../../../components/minor/header';
+import {Routes, Link, Route, BrowserRouter as Router, Outlet} from 'react-router-dom'
+import SideBar from '../../../components/main/sidebar';
 
-const Main =() => {
+//for menu panel
+
+
+
+export const Main =() => {
     return (
         <>
-            <Header/>
+           
+            <main>
 
-            <div className="container-fluid">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit ipsam non voluptates illo soluta repudiandae voluptatem architecto et exercitationem corrupti cum, sunt natus voluptas, sapiente 
-                veniam incidunt perferendis optio animi.
-            </div>
+                {/* sidebar */}
+               
 
+                <div className="container-fluid">
+
+                  <div className="inner row">
+                  
+                    <div className="col-2  ">
+                     <SideBar/>
+                    </div>
+
+                    <div className="col-10">
+                        <Outlet/>
+                    </div>
+
+                  </div>
+    
+
+
+                </div>
+               
+
+            </main>
 
         </>
     )
 }
 
-export default Main;
