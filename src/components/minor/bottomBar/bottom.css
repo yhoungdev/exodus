@@ -9,9 +9,19 @@
     padding: 1em 2em;
 }
 
+.active {
+    color: yellow;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
 
 @media  (min-width: 1200px){
     .bottom {
         display:none;
     }
 }
+
