@@ -7,19 +7,22 @@ const Home = () => {
     const [validation, setValidation] = useState<string>('');
     const [file, setFile] = useState<string>('');
     const [checked, setChecked] = useState('');
+    const [disabled, setDisabled] = useState<boolean>(true);
 
 
     //function to pick the file type
     const handleFile = (e:any) => {
 
         const targetFile = e.target.files[0];
-        
-        console.log(targetFile.name)
+        console.log(process.env.REACT_APP_FIREBASE_API_KEY)
+        console.log(targetFile)
         
         //match file type with regular expression
         const expression = new RegExp(/pdf|docx|txt /i)
             if (targetFile.name.match(expression)) {
                 setChecked(targetFile.name)
+                //undisable button 
+                setDisabled(false)
                 
             } else {
                
@@ -35,6 +38,7 @@ const Home = () => {
 
     const uploadFile = (extension:string) => {
             const ext = extension;
+           
             
         
             
@@ -93,7 +97,9 @@ const Home = () => {
                         </small>
                          
                             <br />
-                         <button className="bg-btn-green px-5 py-3 my-4">
+                         <button className="bg-btn-green px-5 py-3 my-4"
+                          disabled={disabled}
+                         >
                              Upload
                           </button>
 
