@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../../../components/minor/header';
 import {Routes, Link, Route, BrowserRouter as Router, Outlet} from 'react-router-dom'
 import SideBar from '../../../components/main/sidebar';
+import { Bottom } from '../../../components/minor/bottomBar/bottom';
 
 //for menu panel
 
@@ -38,6 +39,8 @@ export const Main =() => {
                
 
             </main>
+
+            <Bottom/>
 
         </>
     )

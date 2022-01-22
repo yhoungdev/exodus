@@ -2,6 +2,7 @@
 /* eslint "plugin1/rule1": "error" */
 import React from 'react';
 import './header.css'
+import {FaBars} from 'react-icons/fa'
 const Header = (props:any) => {
 
   return (
@@ -14,10 +15,16 @@ const Header = (props:any) => {
         </span>
 
         <nav>
-          <ul>
+
+          <ul className="sm:hidden">
             <li>Home</li>
             <li>Log In</li>
           </ul>
+
+          <h4 className="hide">
+            <FaBars/>
+          </h4>
+
         </nav>
      
       </header>
