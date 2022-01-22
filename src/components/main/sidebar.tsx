@@ -12,6 +12,13 @@ import './sidebar.css'
 
             <nav>   
                 <ul>
+
+                <li>
+                     <Link to={`/main/home`}>
+                       Home
+                     </Link>
+                 </li>
+
                  <li>
                      <Link to={`/main/pdf`}>
                        PDF

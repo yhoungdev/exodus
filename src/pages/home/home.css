@@ -1,0 +1,6 @@
+@import url('../../App.css');
+.whole {
+    display:flex;
+    justify-content:center;
+    
+}
