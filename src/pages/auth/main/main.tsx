@@ -15,12 +15,14 @@ export const Main =() => {
 
                 {/* sidebar */}
                
-
+                <Header/>
                 <div className="container-fluid">
+
+                
 
                   <div className="inner row">
                   
-                    <div className="col-2  ">
+                    <div className="col-2 sm:hidden ">
                      <SideBar/>
                     </div>
 

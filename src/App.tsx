@@ -9,6 +9,7 @@ import {Main} from './pages/auth/main/main';
 import Pdf from './pages/auth/routes/pdf/pdf';
 import Docx from './pages/auth/routes/docx/docx';
 import Txt from './pages/auth/routes/txt/txt';
+import Home from './pages/home/home'
 
 // eslint-disable-next-line
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="pdf" element={<Pdf/>}/>
           <Route path="docx" element={<Docx/>}/>
           <Route path="txt" element={<Txt/>}/>
+          <Route path="home" element={<Home/>}/>
         </Route>
  
         <Route path="*" element={<ErrorScreen/>} />
