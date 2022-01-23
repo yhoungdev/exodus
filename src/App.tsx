@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 
 import './App.css';
 // eslint-disable-next-line no-unused-vars
@@ -11,8 +11,20 @@ import Docx from './pages/auth/routes/docx/docx';
 import Txt from './pages/auth/routes/txt/txt';
 import Home from './pages/home/home'
 
+
+
 // eslint-disable-next-line
 function App() {
+
+  useEffect(()=>{
+    //check if Service is available
+    'serviceWorker' in navigator ? 
+      navigator.serviceWorker.register('./sw.js')
+      : ''
+
+      
+  },[])
+
   return (
     <div className="App">
        
