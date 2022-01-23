@@ -9,6 +9,8 @@ import {useAuth0} from '@auth0/auth0-react'
 const Header = (props:any) => {
 
   const { user, isAuthenticated, isLoading } = useAuth0();
+  console.table(user)
+   
 
   return (
     <>
@@ -22,15 +24,31 @@ const Header = (props:any) => {
         <nav>
 
           <ul className="sm:hidden">
-            {console.warn(user)}
+            
           
             <li>Home</li>
-            <li>Log In</li>
+          
+              {isAuthenticated ?
+              //display user image 
+              <li>
+                <img src={user?.picture} alt="" className='rounded-full w-10'/>
+              </li>  :
+              <li>Login</li>
+            }
+           
+            
+            
+            
           </ul>
 
-          <h4 className="hide">
-            <FaBars/>
-          </h4>
+            {
+              !isAuthenticated ? 
+              <h4 className="hide">
+                <FaBars/>
+              </h4> :
+              <img src={user?.picture} alt="" className='rounded-full w-10'/>
+
+            }
 
         </nav>
      
