@@ -2,7 +2,9 @@ import React from 'react';
 const Docx = () => {
     return (
         <>
-            Docx 
+           <div className="container-fluid">
+             Docx 
+           </div>
         </>
     )
 }

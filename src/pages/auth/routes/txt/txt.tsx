@@ -3,7 +3,9 @@ const Txt =()=>{
     return (
         <>
 
-            txt
+            <div className="container-fluid">
+                txt
+            </div>
         
         </>
     )

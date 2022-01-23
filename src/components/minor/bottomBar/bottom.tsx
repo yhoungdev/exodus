@@ -12,12 +12,12 @@ export const Bottom = () => {
 
             <div className="bottom">
 
-                <NavLink className="active" to={`/main/pdf`}
+                <NavLink  to={`/main/pdf`}
                 
                 >
                     <div className="pdf">
                         <VscFilePdf/>
-                        PDF
+                       
                     </div>
                 </NavLink>
 

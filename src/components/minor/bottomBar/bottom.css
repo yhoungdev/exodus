@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-evenly;
     position:fixed;
-    background:green;
+    background:rgb(235, 235, 235);
     bottom: 0;
     right: 0;
     left: 0;
@@ -10,13 +10,13 @@
 }
 
 .active {
-    color: yellow;
+    color: rgba(204, 197, 197, 0.548);
+    background-color: rgb(187, 187, 187);
+    padding: 0.3em;
+    border-radius: 0.5em;
 }
 
-a:link {
-    text-decoration: none;
-    color: white;
-}
+
 
 
 @media  (min-width: 1200px){
