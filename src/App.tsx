@@ -21,13 +21,14 @@ function App() {
       <Routes>
         
         
-        <Route path="/" element={<Homepage/>}/>
+        <Route path="/" element={<Homepage/>} />
         <Route path="/main" element={<Main/>}>
 
           <Route path="pdf" element={<Pdf/>}/>
           <Route path="docx" element={<Docx/>}/>
           <Route path="txt" element={<Txt/>}/>
           <Route path="home" element={<Home/>}/>
+          
         </Route>
  
         <Route path="*" element={<ErrorScreen/>} />
