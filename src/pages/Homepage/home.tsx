@@ -2,10 +2,19 @@ import React from 'react';
 import Header from '../../components/minor/header';
 import Roll from '../../assets/images/roll.gif';
 import {Link} from 'react-router-dom'
+import { useAuth0 } from '@auth0/auth0-react';
 import './home.css';
 const Homepage = () => {
 
+  //destructure the hool
+  const { loginWithRedirect } = useAuth0();
 
+  //function to login user 
+  const userLogin =()=> {
+    loginWithRedirect()
+    
+  }
+ 
   return (
     <>
       <Header/>
@@ -28,10 +37,10 @@ const Homepage = () => {
               A place to share files with family and friends with ease and no stress
             </p>
 
-            <button className="bg-btn-green px-4 py-3 mt-3 rounded">
-              <Link to='/main'>
-                Get Started
-              </Link>
+            <button className="bg-btn-green px-4 py-3 mt-3 rounded"
+              onClick={userLogin}
+            >
+              GET Started
             </button>
 
 

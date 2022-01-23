@@ -5,7 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import { Auth0Provider } from '@auth0/auth0-react';
+
+
 ReactDOM.render(
+
+  
 
     <React.StrictMode>
       <Auth0Provider
