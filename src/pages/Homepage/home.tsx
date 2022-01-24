@@ -1,19 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../../components/minor/header';
 import Roll from '../../assets/images/roll.gif';
-import {Link} from 'react-router-dom'
+import {Link, useNavigate, Navigate} from 'react-router-dom'
 import { useAuth0 } from '@auth0/auth0-react';
 import './home.css';
 const Homepage = () => {
 
   //destructure the hool
-  const { loginWithRedirect } = useAuth0();
+  const { loginWithRedirect, isAuthenticated } = useAuth0();
+
+  const navigate= useNavigate()
 
   //function to login user 
   const userLogin =()=> {
     loginWithRedirect()
     
+      
+
+      
+    
+    
   }
+
+ 
  
   return (
     <>
@@ -46,6 +55,8 @@ const Homepage = () => {
 
           </div>
           {/* end part */}
+
+          {isAuthenticated && ( <Navigate to='/main'/> )}
       </div>
     </>
   );

@@ -8,9 +8,10 @@ import {useAuth0} from '@auth0/auth0-react'
 
 const Header = (props:any) => {
 
-  const { user, isAuthenticated, isLoading } = useAuth0();
+  const { user, isAuthenticated, loginWithRedirect } = useAuth0();
   console.table(user)
    
+
 
   return (
     <>
@@ -33,7 +34,10 @@ const Header = (props:any) => {
               <li>
                 <img src={user?.picture} alt="" className='rounded-full w-10'/>
               </li>  :
-              <li>Login</li>
+              <li
+              
+              onClick={()=>loginWithRedirect()}
+              >Login</li>
             }
            
             
@@ -46,7 +50,7 @@ const Header = (props:any) => {
               <h4 className="hide">
                 <FaBars/>
               </h4> :
-              <img src={user?.picture} alt="" className='rounded-full w-10'/>
+              <img src={user?.picture} alt="" className='rounded-full w-10 hide'/>
 
             }
 
