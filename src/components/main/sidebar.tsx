@@ -1,4 +1,6 @@
  import react from 'react';
+import { GrDocumentTxt, GrDocumentWord } from 'react-icons/gr';
+import { VscFilePdf } from 'react-icons/vsc';
 import { Link } from 'react-router-dom';
 import './sidebar.css'
  const SideBar = () => {
@@ -19,20 +21,31 @@ import './sidebar.css'
                      </Link>
                  </li>
 
-                 <li>
+                 <li className="inline-flex">
                      <Link to={`/main/pdf`}>
-                       PDF
+                        <span>
+                          <VscFilePdf className='mr-2'/>
+                            PDF
+                        </span>
                      </Link>
                  </li>
                  <li>
                      <Link to={`/main/docx`}>
-                       Docx
+                        <span>
+                            <GrDocumentWord className='mr-2 text-light' />
+                            Docx
+                        </span>
+                       
                      </Link>
                  </li>
 
                  <li>
                      <Link to={`/main/txt`}>
-                       Txt
+                      <span>
+                        <GrDocumentTxt className='mr-2'/>
+                         Txt
+                      </span>
+                     
                      </Link>
                  </li>
                 </ul>

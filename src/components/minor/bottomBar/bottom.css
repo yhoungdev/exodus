@@ -10,8 +10,8 @@
 }
 
 .active {
-    color: rgba(204, 197, 197, 0.548);
-    background-color: rgb(187, 187, 187);
+    color: rgba(0, 0, 0, 0.979);
+    background-color: rgba(200, 212, 199, 0.363);
     padding: 0.3em;
     border-radius: 0.5em;
 }
