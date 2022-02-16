@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import './home.css';
 import Upload from '../../assets/images/upload.svg'
+import { FiUploadCloud } from 'react-icons/fi';
 const Home = () => {
 
     //states here 
@@ -68,7 +69,9 @@ const Home = () => {
                     >
 
                         <label htmlFor="upload">
-                            <img src={Upload} alt="" />
+                            <h1>
+                                <FiUploadCloud/>
+                            </h1>
                         </label>
                         <div>
                         <input type="file" name="upload" id="upload" 
@@ -97,7 +100,7 @@ const Home = () => {
                         </small>
                          
                             <br />
-                         <button className="bg-btn-green px-5 py-3 my-4"
+                         <button className="bg-btn-green px-5 py-3 my-4 text-white rounded"
                           disabled={disabled}
                          >
                              Upload

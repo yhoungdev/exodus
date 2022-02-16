@@ -8,7 +8,12 @@
     src: url('./assets/fonts/Gilroy-Medium/Gilroy-Medium.ttf');
 }
 
-@font-face {
-    font-family: Euclid;
-    src: url('./assets/fonts/Gilroy-Medium/Gilroy-Medium.woff');
+.default {
+    color: grey;
+    font-family: Gilroy;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 10em;
+
 }

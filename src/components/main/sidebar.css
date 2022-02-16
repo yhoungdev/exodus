@@ -1,11 +1,15 @@
 @import url('../../App.css');
+@font-face {
+    font-family: Euclid;
+    src: url('./../../assets/fonts/Euclid/Euclid\ Circular\ A\ Medium.ttf');
+}
 .sidebar {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     padding: 2em 5em;
-    font-family: Euclid;
+  
 }
 
 .sidebar ul {
@@ -15,11 +19,11 @@
 }
 
 .sidebar ul li {
-    padding: 3em 0;
+    padding: 2.5em 0;
     text-align: center;
     color: rgb(255, 255, 255);
     font-size:1.2em;
-    font-weight: bold;
+    font-family: Euclid;
 }
 
 .sidebar ul li a {
@@ -34,4 +38,10 @@
 .sidebar ul li span {
     display: inline-flex;
     
+}
+
+.text {
+    font-size:0.9em;
+    font-family: Euclid;
+
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Empty } from '../../../../components/minor/empty';
     const Pdf = () =>{
     return (
 
@@ -8,7 +9,7 @@ import React from 'react';
 
                 <div className="datas">
             
-
+                    <Empty/>
 
                 </div>
            </div>
