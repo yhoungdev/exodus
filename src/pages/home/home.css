@@ -4,3 +4,9 @@
     justify-content:center;
     
 }
+
+.upload-file {
+    font-size: 4cm;
+    color: rgb(201, 201, 201);
+    cursor: pointer;
+}
