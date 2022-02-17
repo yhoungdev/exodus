@@ -1,8 +1,8 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, ReactNode} from 'react';
 
 import './App.css';
 // eslint-disable-next-line no-unused-vars
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Homepage from './pages/Homepage/home';
 import {ErrorScreen} from './pages/404/404';
 import {Main} from './pages/auth/main/main';

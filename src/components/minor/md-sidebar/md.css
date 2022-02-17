@@ -1,0 +1,26 @@
+.mobile-side {
+  color: #fffdfd;
+  font-family: Gilroy;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  overflow: hidden;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5em 0;
+  -webkit-transition: ease-in 1s;
+  transition: ease-in 1s;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-side {
+    display: none;
+  }
+}
+/*# sourceMappingURL=md.css.map */

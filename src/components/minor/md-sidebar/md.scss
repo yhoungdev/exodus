@@ -1,0 +1,23 @@
+.mobile-side {
+    color: rgb(255, 253, 253);
+    font-family: Gilroy;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    overflow: hidden;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    padding: 5em 0;
+    transition: ease-in 1s;
+}
+
+//hide display in large screen
+
+@media screen and (min-width: 768px) {
+    .mobile-side {
+        display: none;
+    }
+}

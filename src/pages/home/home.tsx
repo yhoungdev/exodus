@@ -1,7 +1,10 @@
 import React,{useState} from 'react';
 import './home.css';
 import Upload from '../../assets/images/upload.svg'
+
+
 import { MdCloudUpload } from 'react-icons/md';
+
 const Home = () => {
 
     //states here 
@@ -25,8 +28,10 @@ const Home = () => {
                 //undisable button 
                 setDisabled(false)
                 
+                
                 //create instance for the supabase instance
-                const { data, error } = await supabase.storage.createBucket('avatars')
+                
+               
             } else {
                
                 setValidation('file can only be .pdf .txt or .docx')
