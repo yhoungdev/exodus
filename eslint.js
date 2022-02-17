@@ -1,10 +1,11 @@
+/*
 module.exports = {
   'extends': ['react-app'],
   'rules': {
   },
   'overrides': [
     {
-      'files': ['**/*.js?(x)'],
+      'files': ['**//*.js?(x)'],
       'rules': {
         // ******** add ignore rules here *********
         'react/no-unescaped-entities': 'off',
@@ -14,3 +15,5 @@ module.exports = {
     },
   ],
 };
+
+*/

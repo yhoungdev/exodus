@@ -4,13 +4,18 @@ import React from 'react';
 import './header.css'
 import {FaBars} from 'react-icons/fa';
 import {useAuth0} from '@auth0/auth0-react'
+import Md_side from './md-sidebar/md-sidebar';
 
 
 const Header = (props:any) => {
 
-  const { user, isAuthenticated, isLoading } = useAuth0();
+  const { user, isAuthenticated, loginWithRedirect } = useAuth0();
   console.table(user)
    
+
+  //define style for the container element
+  
+
 
   return (
     <>
@@ -33,7 +38,10 @@ const Header = (props:any) => {
               <li>
                 <img src={user?.picture} alt="" className='rounded-full w-10'/>
               </li>  :
-              <li>Login</li>
+              <li
+              
+              onClick={()=>loginWithRedirect()}
+              >Login</li>
             }
            
             
@@ -46,13 +54,19 @@ const Header = (props:any) => {
               <h4 className="hide">
                 <FaBars/>
               </h4> :
-              <img src={user?.picture} alt="" className='rounded-full w-10'/>
+              <img src={user?.picture} alt="" className='rounded-full w-10 hide'/>
 
             }
 
         </nav>
      
       </header>
+
+      <div className="assist"  >
+       <Md_side/>
+      </div>
+
+      
     </>
   );
 };

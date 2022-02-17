@@ -1,6 +1,10 @@
 import React,{useState} from 'react';
 import './home.css';
 import Upload from '../../assets/images/upload.svg'
+
+
+import { MdCloudUpload } from 'react-icons/md';
+
 const Home = () => {
 
     //states here 
@@ -11,7 +15,7 @@ const Home = () => {
 
 
     //function to pick the file type
-    const handleFile = (e:any) => {
+    const handleFile = async (e:any) => {
 
         const targetFile = e.target.files[0];
         console.log(process.env.REACT_APP_FIREBASE_API_KEY)
@@ -24,6 +28,10 @@ const Home = () => {
                 //undisable button 
                 setDisabled(false)
                 
+                
+                //create instance for the supabase instance
+                
+               
             } else {
                
                 setValidation('file can only be .pdf .txt or .docx')
@@ -68,7 +76,10 @@ const Home = () => {
                     >
 
                         <label htmlFor="upload">
-                            <img src={Upload} alt="" />
+                            <h1 className='upload-file'>
+                                <MdCloudUpload/>
+                            </h1>
+                            <small className='text text-muted'>Click to upload document</small>
                         </label>
                         <div>
                         <input type="file" name="upload" id="upload" 
@@ -97,7 +108,7 @@ const Home = () => {
                         </small>
                          
                             <br />
-                         <button className="bg-btn-green px-5 py-3 my-4"
+                         <button className="bg-btn-green px-5 py-3 my-4 text-white rounded"
                           disabled={disabled}
                          >
                              Upload

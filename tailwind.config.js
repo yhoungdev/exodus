@@ -6,7 +6,8 @@ module.exports = {
   
     colors: {
 
-      "btn-green":"#21CD99"
+      "btn-green":"#004e89  ",
+      "light":"#fff"
 
     },
     screens: {
