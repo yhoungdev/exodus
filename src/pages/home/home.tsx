@@ -1,11 +1,15 @@
 import React,{useState} from 'react';
 import './home.css';
+import {createClient} from '@supabase/supabase-js'
 import Upload from '../../assets/images/upload.svg'
-
+//import supabase client 
+import supabase from '../../client'
 
 import { MdCloudUpload } from 'react-icons/md';
 
 const Home = () => {
+
+    console.log(supabase)
 
     //states here 
     const [validation, setValidation] = useState<string>('');
@@ -30,7 +34,7 @@ const Home = () => {
                 
                 
                 //create instance for the supabase instance
-                
+                const {data,error} = await supabase.storage
                
             } else {
                
@@ -57,7 +61,7 @@ const Home = () => {
     const preventSubmit = (e:any) => {
         e.preventDefault();
         uploadFile('pdf')
-        
+        alert(0)
 
         //call all functions inside here 
         
