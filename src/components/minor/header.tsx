@@ -10,11 +10,16 @@ import Md_side from './md-sidebar/md-sidebar';
 const Header = (props:any) => {
 
   const { user, isAuthenticated, loginWithRedirect } = useAuth0();
-  console.table(user)
+
    
 
   //define style for the container element
-  
+  const style = {
+
+    display: 'none',
+
+    
+  }
 
 
   return (
@@ -62,7 +67,7 @@ const Header = (props:any) => {
      
       </header>
 
-      <div className="assist"  >
+      <div className="assist" style={style} >
        <Md_side/>
       </div>
 
