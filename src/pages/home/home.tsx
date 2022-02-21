@@ -34,7 +34,7 @@ const Home = () => {
                 
                 
                 //create instance for the supabase instance
-                const {data,error} = await supabase.storage
+                const base = await supabase.storage.from('datas').upload(targetFile.files[0],"true")
                
             } else {
                
