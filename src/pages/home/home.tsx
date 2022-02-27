@@ -32,9 +32,9 @@ const Home = () => {
                 //undisable button 
                 setDisabled(false)
                 
-                
+                alert(0)
                 //create instance for the supabase instance
-                const {data,error} = await supabase.storage
+                
                
             } else {
                
@@ -61,7 +61,7 @@ const Home = () => {
     const preventSubmit = (e:any) => {
         e.preventDefault();
         uploadFile('pdf')
-        alert(0)
+        
 
         //call all functions inside here 
         
